@@ -300,6 +300,13 @@ img {
 .dark .skills__content {
   background-color: var(--title-color);
 }
+.dark .home__scroll-name {
+  color: white;
+}
+.dark .home__scroll-arrow {
+  color: white;
+}
+
 /* loader */
 
 .loading {
