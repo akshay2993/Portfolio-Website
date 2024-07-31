@@ -1,5 +1,5 @@
 /* =============GOOGLE FONTS================ */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 @import url(https://fonts.googleapis.com/css?family=Quattrocento+Sans);
 
 /*=============== VARIABLES CSS ===============*/
@@ -75,7 +75,8 @@ html {
   scroll-behavior: smooth;
 }
 
-html, body {
+html,
+body {
   width: 100vw;
   overflow-x: hidden;
 }
@@ -89,7 +90,18 @@ textarea {
 }
 
 body {
-  background-color: var(--body-color);
+  /* background-color: var(--body-color); */
+  background: #abbaab;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right,
+      #ffffff,
+      #abbaab);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right,
+      #ffffff,
+      #abbaab);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   color: var(--text-color);
 }
 
@@ -114,7 +126,8 @@ button {
   outline: none;
 }
 
-a, button {
+a,
+button {
   cursor: pointer;
 }
 
@@ -246,6 +259,7 @@ img {
   background-color: #000;
   color: #fff;
 }
+
 .dark a.home__social-icon {
   color: white;
 }
@@ -281,25 +295,40 @@ img {
 .dark .contact__card-icon {
   color: white;
 }
+
 .dark .contact__form-tag {
   background: black;
 }
+
 .dark .contact__form-input {
   background: none;
   border: 2px solid rgba(255, 255, 255, 0.3);
 }
+
 .dark .footer {
   background: var(--title-color);
 }
+
 .dark .scrollup {
   background: black;
 }
+
 .dark .footer__social-icon {
   background-color: black;
 }
+
 .dark .skills__content {
   background-color: var(--title-color);
 }
+
+.dark .home__scroll-name {
+  color: white;
+}
+
+.dark .home__scroll-arrow {
+  color: white;
+}
+
 /* loader */
 
 .loading {
@@ -325,52 +354,61 @@ img {
   height: 100px;
   line-height: 100px;
 }
+
 .loading-text span {
   display: inline-block;
   margin: 0 5px;
   color: #000;
   font-family: "Quattrocento Sans", sans-serif;
 }
+
 .loading-text span:nth-child(1) {
   filter: blur(0px);
   -webkit-animation: blur-text 1.5s 0s infinite linear alternate;
-          animation: blur-text 1.5s 0s infinite linear alternate;
+  animation: blur-text 1.5s 0s infinite linear alternate;
 }
+
 .loading-text span:nth-child(2) {
   filter: blur(0px);
   -webkit-animation: blur-text 1.5s 0.2s infinite linear alternate;
-          animation: blur-text 1.5s 0.2s infinite linear alternate;
+  animation: blur-text 1.5s 0.2s infinite linear alternate;
 }
+
 .loading-text span:nth-child(3) {
   filter: blur(0px);
   -webkit-animation: blur-text 1.5s 0.4s infinite linear alternate;
-          animation: blur-text 1.5s 0.4s infinite linear alternate;
+  animation: blur-text 1.5s 0.4s infinite linear alternate;
 }
+
 .loading-text span:nth-child(4) {
   filter: blur(0px);
   -webkit-animation: blur-text 1.5s 0.6s infinite linear alternate;
-          animation: blur-text 1.5s 0.6s infinite linear alternate;
+  animation: blur-text 1.5s 0.6s infinite linear alternate;
 }
+
 .loading-text span:nth-child(5) {
   filter: blur(0px);
   -webkit-animation: blur-text 1.5s 0.8s infinite linear alternate;
-          animation: blur-text 1.5s 0.8s infinite linear alternate;
+  animation: blur-text 1.5s 0.8s infinite linear alternate;
 }
+
 .loading-text span:nth-child(6) {
   filter: blur(0px);
   -webkit-animation: blur-text 1.5s 1s infinite linear alternate;
-          animation: blur-text 1.5s 1s infinite linear alternate;
+  animation: blur-text 1.5s 1s infinite linear alternate;
 }
+
 .loading-text span:nth-child(7) {
   filter: blur(0px);
   -webkit-animation: blur-text 1.5s 1.2s infinite linear alternate;
-          animation: blur-text 1.5s 1.2s infinite linear alternate;
+  animation: blur-text 1.5s 1.2s infinite linear alternate;
 }
 
 @keyframes blur-text {
   0% {
     filter: blur(0px);
   }
+
   100% {
     filter: blur(4px);
   }

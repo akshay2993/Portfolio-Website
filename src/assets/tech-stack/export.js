@@ -1,5 +1,5 @@
 import Html from './html.png'
-import Css from './Css.png'
+import Css from './css.png'
 import Js from './javascript.png'
 import Bootstrap from './bootstrap.png'
 import Express from './express.png'
